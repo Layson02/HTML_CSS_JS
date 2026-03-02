@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução Exercícios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 { color: #333; }
+        .resposta {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            font-family: monospace;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <h1>Resultados Práticos - JS</h1>
+
+    <div class="container">
+        <h2>Questão 7</h2>
+        <p>Crie um código HTML que utilize JavaScript interno para exibir: 'Olá, JavaScript!'.</p>
+        <div id="q7" class="resposta"></div>
+    </div>
+
+    <div class="container">
+        <h2>Questão 8</h2>
+        <p>Declare uma variável com let e outra com const e exiba seus valores.</p>
+        <div id="q8" class="resposta"></div>
+    </div>
+
+    <div class="container">
+        <h2>Questão 9</h2>
+        <p>Some uma variável numérica com uma string e exiba o resultado.</p>
+        <div id="q9" class="resposta"></div>
+    </div>
+
+    <div class="container">
+        <h2>Questão 10</h2>
+        <p>Crie um script que exiba 'Bom dia' ou 'Boa tarde' usando if-else.</p>
+        <div id="q10" class="resposta"></div>
+    </div>
+
+    <div class="container">
+        <h2>Questão 11</h2>
+        <p>Gere um número aleatório com Math.random() e redirecione o usuário conforme o valor.</p>
+        <p><em>Clique no botão para testar o redirecionamento (menor que 0.6 = YouTube_Hakari, maior = YouTube_Judas).</em></p>
+        <button onclick="executarQuestao11()">Gerar e Redirecionar (me clique pls)</button>
+        <div id="q11" class="resposta" style="margin-top: 10px;">Aguardando ação...</div>
+    </div>
+
+    <script>
+        // --- Questão 7 ---
+        document.getElementById('q7').innerText = 'Olá, JavaScript!';
+
+        // --- Questão 8 ---
+        let variavelLet = "Sou uma variável mutável (let)";
+        const variavelConst = "Sou uma constante (const)";
+        document.getElementById('q8').innerHTML = `Valor do let: ${variavelLet} <br> Valor do const: ${variavelConst}`;
+
+        // --- Questão 9 ---
+        let numero = 16;
+        let texto = " foi um dia bom.";
+        let resultadoSoma = numero + texto; 
+        document.getElementById('q9').innerText = `O resultado da soma (16 + " foi um dia bom.") é: "${resultadoSoma}"`;
+
+        // --- Questão 10 ---
+const dataAtual = new Date();
+const horas = dataAtual.getHours();
+
+const minutos = dataAtual.getMinutes().toString().padStart(2, '0');
+
+let saudacao = "";
+
+if (horas < 12) {
+    saudacao = "Bom dia!";
+} else if (horas < 18) {
+    saudacao = "Boa tarde!";
+} else {
+    saudacao = "Boa noite!";
+}
+
+const horarioExato = `${horas}:${minutos}`;
+document.getElementById('q10').innerText = `${saudacao} O horário exato puxado do sistema é ${horarioExato}.`;
+
+        // --- Questão 11 ---
+        function executarQuestao11() {
+            let valorAleatorio = Math.random();
+            document.getElementById('q11').innerText = `Valor gerado: ${valorAleatorio.toFixed(2)}. Redirecionando...`;
+            
+            
+            setTimeout(() => {
+                if (valorAleatorio < 0.6) {
+                    window.location.href = "https://youtu.be/8SCHWXS4yKg?si=UzNH1fXHX4BUSGox";
+                } else {
+                    window.location.href = "https://youtu.be/44pt8w67S8I?si=f9ElukH9W6RscR9m";
+                }
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
