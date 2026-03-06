@@ -1,0 +1,26 @@
+RESUMO DO SITE - Desafio TechStore
+
+DESCRIÇÃO GERAL:
+O site é uma página interativa simulando uma loja virtual de eletrônicos chamada "TechStore". Ele permite que o usuário clique em produtos disponíveis para iniciar um processo de compra interativo via JavaScript, recebendo um resumo final com cálculos automáticos de descontos e frete. O design apresenta um tema escuro (Dark Mode) estruturado com CSS inline.
+
+FUNCIONALIDADES PRINCIPAIS:
+1. Saudação Automática: Ao carregar a página, uma mensagem de boas-vindas é gerada dinamicamente por um script interno.
+2. Interação de Compra: Botões "Comprar" em cada produto iniciam o fluxo de processamento.
+3. Coleta de Dados: O sistema solicita ao usuário seu nome e idade através de caixas de diálogo (prompts).
+4. Motor de Regras e Preços:
+   - Aplica um desconto padrão de 10% em todos os produtos.
+   - Aplica um desconto extra de R$ 50,00 e exibe uma mensagem especial para clientes com mais de 30 anos.
+   - Verifica a elegibilidade para Frete Grátis (compras com valor final acima de R$ 1000,00). Caso contrário, adiciona R$ 30,00 de frete.
+5. Resumo Final: Exibe um extrato formatado da compra tanto em um alerta quanto renderizado diretamente na página, contendo todas as informações do cliente, produto, descontos e total a pagar.
+
+TECNOLOGIAS UTILIZADAS:
+- HTML5 para a estrutura semântica dos produtos.
+- CSS (interno/head) para a estilização visual escura e organização em blocos.
+- JavaScript implementado de três formas:
+  * Externo (Js/script.js): Lógica principal de negócios, cálculos de descontos, frete e formatação do resumo.
+  * Interno (tag <script>): Função de manipulação do DOM para a mensagem de boas-vindas.
+  * Inline (atributos de eventos): Chamadas onclick e onload para conectar o HTML às funções JS.
+
+ESTRUTURA DE ARQUIVOS:
+- index.html (Interface principal e estilos)
+- Js/script.js (Lógica de processamento de compras)

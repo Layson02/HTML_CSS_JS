@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div id="image-container">
+        <img id="main-image" src="img/Fullbody.jpeg" alt="Imagem principal" style="max-width: 250px; height: auto; display: block; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    </div>
+
+    <div id="caption" style="margin-top: 10px; font-weight: bold;"></div>
+    <div id="domain-caption" style="margin-top: 10px; font-weight: bold; color: purple;"></div>
+
+    <div style="margin-top: 20px;">
+        <button id="restore-btn" onclick="restoreImage()" style="display: none;">Restaurar (Fullbody)</button>
+        <button onclick="cutRandomImage()" style="margin-left: 10px;">Cortar</button>
+        <button onclick="calculateGojoDomain()" style="margin-left: 10px;">Lançar Roxo</button>
+        <button id="restore-domain-btn" onclick="restoreDomainImage()" style="display: none; margin-left: 10px;">Restaurar Domínio</button>
+    </div>
+
+    <script>
+        function restoreImage() {
+            document.getElementById('main-image').src = 'img/Fullbody.jpeg';
+            document.getElementById('caption').innerText = '';
+            document.getElementById('restore-btn').style.display = 'none';
+        }
+
+        function cutRandomImage() {
+            const images = ['img/Peito.png', 'img/Pelvis.png', 'img/Pernas.png'];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            document.getElementById('main-image').src = images[randomIndex];
+            document.getElementById('caption').innerText = 'Cortado';
+            document.getElementById('restore-btn').style.display = 'inline-block';
+        }
+    </script>
+</body>
+</html>

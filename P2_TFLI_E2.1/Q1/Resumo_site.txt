@@ -1,0 +1,40 @@
+RESUMO DO SITE - Exercício 2
+
+DESCRIÇÃO GERAL:
+Este site é uma aplicação web simples que combina funcionalidades de manipulação de imagens com uma calculadora de probabilidade e poder temática de Jujutsu Kaisen. A interface agora conta com um design aprimorado, utilizando um fundo em gradiente (azul, roxo e vermelho).
+
+FUNCIONALIDADES PRINCIPAIS:
+
+1. GALERIA DE IMAGENS:
+   - Exibe uma imagem principal (Fullbody.jpeg) inicialmente.
+   - Botão "Cortar" que carrega aleatoriamente uma das 3 imagens: Peito.png, Pelvis.png ou Pernas.png.
+   - Mostra a legenda "Cortado" quando uma imagem cortada é exibida.
+   - Botão "Restaurar (Fullbody)" que volta para a imagem original.
+
+2. CALCULADORA DE PODER DE GOJO:
+   - Botão "Lançar Roxo" que ativa a lógica principal no JavaScript externo.
+   - Solicita ao usuário um nível de energia amaldiçoada (1-10) e valida a entrada com if/else.
+   - Possui uma mecânica de probabilidade (RNG): 16% de chance de ativar o "Vazio Irrestrito" com imagem própria.
+   - Caso a chance especial não ative, calcula o poder com base no input:
+     * Níveis 1 a 8: Exibe o "Vazio Roxo" padrão calculado.
+     * Níveis 9 e 10: Exibe o "Hollow Purple 200%" (Poder Máximo).
+   - Mostra o resultado na tela e em um alerta, permitindo a restauração da imagem original posteriormente.
+
+TECNOLOGIAS UTILIZADAS:
+- HTML5 para estrutura.
+- CSS Externo (style.css) para o gradiente de fundo e estilização de texto.
+- JavaScript das 3 formas:
+  * Externo (script.js) - Lógica de poder, validação e probabilidade.
+  * Interno (no HTML) - Manipulação das imagens de corte.
+  * Inline (onclick nos botões) - Chamadas de funções.
+
+CONTEXTO TEMÁTICO:
+- As imagens representam partes do corpo de Gojo.
+- A calculadora simula o uso de energia amaldiçoada de Satoru Gojo (Jujutsu Kaisen).
+- Referências diretas às técnicas "Vazio Roxo", "Vazio Roxo 200%" e "Vazio Irrestrito".
+
+ESTRUTURA DE ARQUIVOS:
+- index.html (Página principal)
+- Css/style.css (Estilos visuais)
+- JS/script.js (JavaScript externo)
+- img/ (Diretório de imagens: Fullbody.jpeg, irrestrito.jpg, Peito.png, Pelvis.png, Pernas.png, roxo_200%.jpg, roxo.jpg)
