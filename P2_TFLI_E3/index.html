@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Arrays - Reset</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #eceff1; color: #333; }
+        .container { max-width: 1100px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .setup-section { background: #f1f8e9; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #c5e1a5; display: flex; gap: 10px; align-items: center; }
+        .current-array { background: #2c3e50; color: #2ecc71; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 1.2em; margin-bottom: 20px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #2c3e50; color: white; }
+        input { padding: 6px; border: 1px solid #ccc; border-radius: 4px; }
+        .input-wide { width: 300px; }
+        .input-small { width: 80px; }
+        button { padding: 6px 12px; background: #34495e; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #2c3e50; }
+        .btn-setup { background: #558b2f; }
+        .btn-reset { background: #c62828; }
+        .btn-reset:hover { background: #b71c1c; }
+        .desc { font-size: 0.85em; color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Laboratório Interativo de Arrays</h1>
+    
+    <div class="setup-section">
+        <strong>Configurar:</strong>
+        <input type="text" id="input-setup" class="input-wide" placeholder="Ex: Item1, Item2">
+        <button id="btn-setup" class="btn-setup">Criar Novo</button>
+        <button id="btn-reset" class="btn-reset">Resetar Padrão</button>
+    </div>
+
+    <div class="current-array" id="display-array"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Método</th>
+                <th>Parâmetro(s)</th>
+                <th>Ação</th>
+                <th>Explicação Técnica</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-metodos"></tbody>
+    </table>
+</div>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
