@@ -1,42 +1,92 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --border-color: #cccccc;
+    --input-bg: #ffffff;
+    --btn-bg: #e0e0e0;
+    --btn-hover: #d0d0d0;
+    --error-color: #d32f2f;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #555555;
+    --input-bg: #1e1e1e;
+    --btn-bg: #333333;
+    --btn-hover: #444444;
+    --error-color: #ff5252;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: white;
-    transition: background-color 0.3s;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-tema {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.btn-tema:hover {
+    background-color: var(--btn-bg);
 }
 
 #container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
 }
 
-input {
-    padding: 10px;
-    width: 95%;
-    margin-bottom: 15px;
+.input-padrao {
+    width: 100%;
+    padding: 8px;
     box-sizing: border-box;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-button {
+.btn-entrar {
     padding: 8px 12px;
-    margin: 2px;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
     cursor: pointer;
+}
+
+.btn-entrar:hover {
+    background-color: var(--btn-hover);
 }
 
 #lista-alunos {
     margin-top: 15px;
     padding: 15px;
-    background-color: white;
-    border: 1px dashed #999;
+    border: 1px dashed var(--border-color);
     min-height: 50px;
 }
 
-#mensagem {
-    color: green;
-    height: 20px;
+.erro-msg {
+    color: #28a745; 
     font-weight: bold;
+    height: 20px;
 }
