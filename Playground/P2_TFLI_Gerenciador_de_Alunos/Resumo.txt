@@ -1,0 +1,125 @@
+--Descrição Geral
+
+O sistema é uma aplicação web simples que permite gerir uma lista de nomes (alunos). Foi construído utilizando tecnologias puras (HTML5, CSS3 e JavaScript Vanilla), sem a dependência de frameworks externos, focando na manipulação de DOM e lógica de arrays.
+
+--Funcionalidades Principais 
+
+
+*Cadastro: Adiciona um nome ao array e atualiza o ecrã instantaneamente.
+
+
+*Remoção: Remove o último nome da lista.
+
+
+*Inversão: Inverte a ordem atual dos alunos cadastrados.
+
+
+*Formatação Automática: Transforma o texto em maiúsculas assim que o utilizador termina de digitar.
+
+
+*Tema Dinâmico: Alternância entre Modo Claro e Escuro com deteção automática do sistema.
+
+--Recursos Técnicos Utilizados (Checklist de Requisitos) O projeto cumpre 100% das solicitações da imagem, conforme detalhado abaixo:
+
+
+*Interface (Item 1): Criada com input, botões e div de exibição.
+
+
+*Armazenamento (Item 2): Utiliza um Array global de alunos.
+
+
+*Funções Obrigatórias (Item 3): Implementação das funções adicionarAluno, removerAluno, inverterLista e mostrarLista.
+
+
+*Métodos de Array (Item 4): Uso de .push() para adicionar, .pop() para remover, .reverse() para inverter e .join() para formatar a exibição.
+
+
+*Eventos (Item 5): Aplicação de onclick nos botões e onchange no campo de texto.
+
+
+*Interação Inicial (Item 6): Uso de window.onload com prompt para capturar o nome do utilizador e exibir mensagens de boas-vindas.
+
+
+*DOM (Item 7): Manipulação completa via getElementById, alteração de innerHTML, captura de value e alteração de style.
+
+
+*Validação (Item 8): Bloqueio de inserção de valores vazios com um alerta de erro.
+
+O Gemini disse
+Aqui está o resumo do projeto devidamente formatado, padronizado e organizado em secções, mantendo todo o conteúdo original:
+
+
+PROJETO: Gerenciador de Alunos 
+
+1. Descrição Geral
+O sistema é uma aplicação web simples que permite gerir uma lista de nomes (alunos). Foi construído utilizando tecnologias puras (HTML5, CSS3 e JavaScript Vanilla), sem a dependência de frameworks externos, focando na manipulação de DOM e lógica de arrays.
++1
+
+2. Funcionalidades Principais 
+
+
+Cadastro: Adiciona um nome ao array e atualiza o ecrã instantaneamente.
+
+
+Remoção: Remove o último nome da lista.
+
+
+Inversão: Inverte a ordem atual dos alunos cadastrados.
+
+
+Formatação Automática: Transforma o texto em maiúsculas assim que o utilizador termina de digitar.
+
+
+Tema Dinâmico: Alternância entre Modo Claro e Escuro com deteção automática do sistema.
+
+3. Recursos Técnicos Utilizados (Checklist de Requisitos) O projeto cumpre 100% das solicitações da imagem, conforme detalhado abaixo:
+
+
+Interface (Item 1): Criada com input, botões e div de exibição.
+
+
+Armazenamento (Item 2): Utiliza um Array global de alunos.
+
+
+Funções Obrigatórias (Item 3): Implementação das funções adicionarAluno, removerAluno, inverterLista e mostrarLista.
+
+
+Métodos de Array (Item 4): Uso de .push() para adicionar, .pop() para remover, .reverse() para inverter e .join() para formatar a exibição.
+
+
+Eventos (Item 5): Aplicação de onclick nos botões e onchange no campo de texto.
+
+
+Interação Inicial (Item 6): Uso de window.onload com prompt para capturar o nome do utilizador e exibir mensagens de boas-vindas.
+
+
+DOM (Item 7): Manipulação completa via getElementById, alteração de innerHTML, captura de value e alteração de style.
+
+
+Validação (Item 8): Bloqueio de inserção de valores vazios com um alerta de erro.
+
+--Desafios Extras Concluídos 
+
+
+*Cor Dinâmica: Função para alternar a cor da fonte da lista entre preto e azul.
+
+
+*Botão Ligar/Desligar: Altera o innerHTML do botão, escurece o fundo e desativa o painel, simulando um sistema desligado.
+
+
+*Feedback Visual: Implementação de setTimeout com arrow function para exibir mensagens temporárias.
+
+--Funcionalidade Premium (Modo Escuro Profissional) 
+
+
+*Deteção Automática: Utiliza matchMedia para identificar se o computador está em modo claro ou escuro e carregar o tema correspondente.
+
+
+*Variáveis CSS: Uso de :root e data-theme para gerir cores de forma moderna e eficiente.
+
+
+*Ícones SVGs: Troca dinâmica entre ícones de Sol e Lua para indicar o estado do tema.
+
+# Explicação Técnica: setTimeout O setTimeout é uma função que aguarda um tempo definido (em milissegundos) antes de executar uma ação. No projeto, é utilizado em conjunto com uma Arrow Function para limpar as notificações de "sucesso" após 2 segundos, garantindo que o ecrã permaneça limpo e organizado.
+
+# Conclusão O código foi estruturado de forma modular e limpa, facilitando a manutenção e a explicação lógica de cada etapa do processo de manipulação de dados no navegador.
