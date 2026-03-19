@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Alunos</title>
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
+    <div id="container">
+        <h2 id="titulo">Bem-vindo!</h2>
+        
+        <input type="text" id="nome-aluno" placeholder="Nome do aluno..." onchange="formatarTexto()">
+        
+        <div class="botoes">
+            <button onclick="adicionarAluno()">Adicionar</button>
+            <button onclick="removerAluno()">Remover Último</button>
+            <button onclick="inverterLista()">Inverter Lista</button>
+        </div>
+
+        <p id="mensagem"></p>
+
+        <h3>Lista:</h3>
+        <div id="lista-alunos">A lista está vazia.</div>
+
+        <hr>
+        
+        <div class="botoes-extras">
+            <button onclick="mudarCor()">Mudar Cor</button>
+            <button id="btn-ligar" onclick="ligarDesligar()">Desligar</button>
+        </div>
+    </div>
+
+    <script src="Js/script.js"></script>
     
 </body>
 </html>
