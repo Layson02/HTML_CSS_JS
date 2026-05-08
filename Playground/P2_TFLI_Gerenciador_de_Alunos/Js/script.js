@@ -32,7 +32,7 @@ let alunos = [];
 window.onload = function() {
     let nome = prompt("Qual o seu nome?");
     if (nome) {
-        document.getElementById("titulo").innerHTML = "Bem-vindo, " + nome + "!";
+        document.getElementById("titulo").textContent = "Bem-vindo, " + nome + "!";
     }
 };
 

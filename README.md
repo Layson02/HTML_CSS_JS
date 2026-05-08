@@ -57,9 +57,3 @@ Para manter a organização acadêmica, as pastas deste repositório seguem um p
 * **`/P2_TFLI_E2.1`**: Códigos e resolução do Exercício 2.1.
 * **`/P2_TFLI_E3`**: Códigos e resolução do Exercício 3.
 * **`/P2_TFLI_E3.1`**: Continuação dos códigos e resolução do Exercício 3.
-
----
-
-## 👨‍💻 Autor / Author
-
-**Layson**
