@@ -19,14 +19,7 @@ To maintain academic organization, the folders in this repository follow an acro
 * **`P`**: Indicates the Period (Semester).
 * **`TFLI`**: Indicates the Front-End Technology with Imperative Logic course.
 * **`E[number]`**: Indicates the Exercise number.
-
-## 📁 Repository Structure
-
-* **`/Playground`**: Sandbox environment for free testing, experimental logic, and draft code.
-* **`/P2_TFLI_E2`**: Codes and resolution of Exercise 2.
-* **`/P2_TFLI_E2.1`**: Codes and resolution of Exercise 2.1.
-* **`/P2_TFLI_E3`**: Codes and resolution of Exercise 3.
-* **`/P2_TFLI_E3.1`**: Continuation of the codes and solution to Exercise 3.
+* **`Playground`**: Sandbox environment for free testing, experimental logic, and draft code.
 
 ---
 
@@ -49,17 +42,4 @@ Para manter a organização acadêmica, as pastas deste repositório seguem um p
 * **`P`**: Indica o Período.
 * **`TFLI`**: Indica a disciplina de Tecnologia para Front-End com Lógica Imperativa.
 * **`E[número]`**: Indica o número do Exercício.
-
-## 📁 Estrutura do Repositório
-
-* **`/Playground`**: Ambiente de testes livres, lógicas experimentais e rascunhos de código.
-* **`/P2_TFLI_E2`**: Códigos e resolução do Exercício 2.
-* **`/P2_TFLI_E2.1`**: Códigos e resolução do Exercício 2.1.
-* **`/P2_TFLI_E3`**: Códigos e resolução do Exercício 3.
-* **`/P2_TFLI_E3.1`**: Continuação dos códigos e resolução do Exercício 3.
-
----
-
-## 👨‍💻 Autor / Author
-
-**Layson**
+* **`Playground`**: Ambiente de testes livres, lógicas experimentais e rascunhos de código.
